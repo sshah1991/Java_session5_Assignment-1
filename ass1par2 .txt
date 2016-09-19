@@ -1,0 +1,18 @@
+package abstractDemo;
+
+public class circle extends Figure {
+	double area;
+	double perimeter;
+
+	void findArea(double dim1) {
+
+		area = 3.14 * dim1 * dim1;
+		System.out.println("area is :"+area);
+	}
+
+	void findperimeter(double dim1) {
+		perimeter = 2 * 3.14 * dim1;
+		System.out.println("perimeter is :"+perimeter);
+	}
+
+}

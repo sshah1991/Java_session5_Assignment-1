@@ -1,0 +1,29 @@
+package abstractDemo;
+
+import java.util.Scanner;
+
+public class traingle {
+	float height, base;
+	double area, perimeter;
+
+	Scanner input = new Scanner(System.in);
+
+	public traingle() {
+		System.out.println("enter the height");
+		height = input.nextFloat();
+		System.out.println("enter the base");
+		base = input.nextFloat();
+	}
+
+	void findArea(double dim1) {
+
+		area = 0.5 * base * height;
+		System.out.println("area is :"+area);
+	}
+
+	void findperimeter(double dim1) {
+		perimeter = dim1 + height + base;
+		System.out.println("perimeter is :"+perimeter);
+	}
+
+}

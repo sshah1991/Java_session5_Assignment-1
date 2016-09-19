@@ -1,0 +1,7 @@
+package abstractDemo;
+
+public abstract class Figure {
+	double dim1;
+	abstract void findArea(double dim1);
+	abstract void findperimeter(double dim1);
+}

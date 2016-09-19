@@ -1,0 +1,27 @@
+package abstractDemo;
+
+import java.util.Scanner;
+
+public class rectangle extends Figure {
+	double area;
+	double perimeter;
+	float width;
+	Scanner input = new Scanner(System.in);
+
+	public rectangle() {
+		System.out.println("enter the width");
+		width = input.nextFloat();
+	}
+
+	void findArea(double dim1) {
+
+		area = dim1 * width;
+		System.out.println("area is :"+area);
+	}
+
+	void findperimeter(double dim1) {
+		perimeter = 2 * (dim1 + width);
+		System.out.println("perimeter is :"+perimeter);
+	}
+
+}
